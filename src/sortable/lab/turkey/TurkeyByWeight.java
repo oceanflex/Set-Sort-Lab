@@ -1,4 +1,4 @@
-package sortable.turkey.lab;
+package sortable.lab.turkey;
 
 import java.util.Comparator;
 import org.apache.commons.lang3.builder.CompareToBuilder;

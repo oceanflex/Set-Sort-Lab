@@ -1,4 +1,4 @@
-package sortable.turkey.lab;
+package sortable.lab.turkey;
 
 import java.util.ArrayList;
 import java.util.Collections;
