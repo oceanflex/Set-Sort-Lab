@@ -11,7 +11,7 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
  *
  * @author zsummers
  */
-public class Turkey implements Comparable{
+public class Turkey implements Comparable<Turkey>{
     private String breed;
     private String tag;
     private boolean cooked;
@@ -83,7 +83,7 @@ public class Turkey implements Comparable{
         return true;
     }
 
-    public int compareTo(Object o) {
+    public int compareTo(Turkey o) {
         Turkey in = (Turkey)o;
         return new CompareToBuilder()
                 .append(this.getTag(), in.getTag())

@@ -7,11 +7,9 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
  *
  * @author zsummers
  */
-public class TurkeyByWeight implements Comparator{
+public class TurkeyByWeight implements Comparator<Turkey>{
 
-    public int compare(Object o1, Object o2) {
-        Turkey t1 = (Turkey)o1;
-        Turkey t2 = (Turkey)o2;
+    public int compare(Turkey t1, Turkey t2) {
         return new CompareToBuilder()
                 .append(t1.getWeight(), t2.getWeight())
                 //.append(t1.isCooked(), t2.isCooked())
